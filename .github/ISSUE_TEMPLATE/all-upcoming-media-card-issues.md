@@ -25,7 +25,7 @@ assignees: ''
 
 ## Troubleshooting Guide:
 <!-- Indicate if you followed all steps in the troubleshooting guide and include what you may have learned about your issue after doing so.-->
-<!-- https://github.com/custom-cards/upcoming-media-card/blob/master/troubleshooting.md -->
+<!-- https://github.com/NemesisRE/upcoming-media-card/blob/master/troubleshooting.md -->
 
 ## Home Assistant Version:
 <!-- Version number of HA you are running (do not just say "latest") -->

@@ -1,5 +1,5 @@
 **Requires a custom-component:**<br/>
-This card will only work if you've installed a custom-component to feed it. A list of the current custom components can be found in the [Github readme](https://github.com/custom-cards/upcoming-media-card).
+This card will only work if you've installed a custom-component to feed it. A list of the current custom components can be found in the [Github readme](https://github.com/NemesisRE/upcoming-media-card).
 
 
 ## Features
@@ -11,12 +11,7 @@ This card will only work if you've installed a custom-component to feed it. A li
 * Can limit the number of episodes/movies shown.
 * Uses responsive design to scale elegantly
 
-
-## Supporting Development
-- :coffee: [Buy me a coffee](https://www.buymeacoffee.com/FgwNR2l)
-- :red_circle: [Tip some Crypto](https://github.com/sponsors/maykar)
-- :heart: [Sponsor me on GitHub](https://github.com/sponsors/maykar)
-<br><br>
+<br/><br/>
 
 | Poster View | Fan Art View
 | ---- | ---- 
@@ -25,5 +20,4 @@ This card will only work if you've installed a custom-component to feed it. A li
 
 
 <br/><br/>
-<a href="https://www.buymeacoffee.com/FgwNR2l" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a><br>
-### If you're having issues, check out the [troubleshooting guide](https://github.com/custom-cards/upcoming-media-card/blob/master/troubleshooting.md) and [@thomasloven's lovelace guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins) before posting an issue to Github or asking for help on the forums.
+### If you're having issues, check out the [troubleshooting guide](https://github.com/NemesisRE/upcoming-media-card/blob/master/troubleshooting.md) and [@thomasloven's lovelace guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins) before posting an issue to Github or asking for help on the forums.
