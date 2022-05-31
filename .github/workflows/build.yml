@@ -1,0 +1,30 @@
+name: Build on release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set version number
+      run: |
+        sed -i 's|*DEV|${{ github.ref }}|g' upcoming-media-card.js
+        sed -i 's|refs/tags/||' upcoming-media-card.js
+    - name: Install deps
+      run: npm install uglify-js @babel/core @babel/cli @babel/preset-env
+    - name: Run Babel
+      run: npx babel upcoming-media-card.js --out-file upcoming-media-card.js --presets @babel/preset-env
+    - name: Run Uglify
+      run: npx uglify-js upcoming-media-card.js -b beautify=false,max_line_len=150 --compress --mangle toplevel --output upcoming-media-card.js
+    - name: Upload release asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./upcoming-media-card.js
+        asset_name: upcoming-media-card.js
+        asset_content_type: text/javascript
